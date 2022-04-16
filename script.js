@@ -1,3 +1,5 @@
+// CODIGO FINAL 
+
 var vida= 3;
 var acc = document.getElementsByClassName("accordion");
 var i;
