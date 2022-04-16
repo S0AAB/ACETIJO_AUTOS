@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Acertijo Autos</title>
+    <link rel="stylesheet" href="style.css">
+
+
+
+</head>
+<body>
+
+<div id="titul"> <center><h1 id="titulo"><b>Acertijo carrera de Autos</b>  </h1> </center></div>
+    
+
+<button id = "acord1"class="accordion"><b>Instrucciones</b></button>
+<div  class="panel">
+  <p id = "pan1">Hay ocho carros de marcas y  colores diferentes que están alineados para salir en carrera. Hay que establecer el orden en que están dispuestos, basándose en las pistas. <br><br>
+    Arrastre los autos y las marcas de la parte inferior y organicelos en las casillas superiores para resolver el acertijo. Tiene 3 intentos , y se le restara un intento por cada vez que suelte los autos o marcas en la casillas incorrectas.
+</p>
+</div>
+
+<button id= "acord2"class="accordion"><b>Pistas</b></button>
+<div class="panel">
+  <p id ="pan2">1.El ferrari está entre el auto rojo y gris  <br> 
+                2.El auto gris está a la izquierda de un Lotus  <br>
+                3.El McLaren es el segundo auto a la izquierda del Ferrari y el primero a la derecha del auto azul <br>
+                4.El Tyrell no tiene ningún auto a su derecha y está después del auto negro<br>
+                5.El auto negro está entre el Tyrell y al auto amarillo<br>
+                6.El Shadow no tienen ningún auto a su izquierda,está a la izquierda del auto verde<br>
+                7.A la derecha del auto verde esta el March<br>
+                8.El Lotus es el segundo auto a la derecha del auto crema y el segundo a la izquierda del color marrón<br>
+                9.El Lola es el segundo auto a la izquierda de un Iso <br>
+
+
+
+</p>            
+</div>
+<br>
+    <center><canvas width="120" height="50" id="lienzo"></canvas></center>
+
+    <div class="container">
+        <div id="puzzle"></div>
+        <div id="puzzle2"></div>
+
+        <div id="piezas"></div>
+        <div id="piezas2"></div>
+        
+    </div>
+
+    <h1 id="mensaje">¡Ganaste!</h1>
+    <div id="per"><h1 id="mensaje2">¡Perdiste!</h1></div>
+    <script src="script.js"></script> 
+</body>
+</html>

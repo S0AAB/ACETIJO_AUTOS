@@ -1,0 +1,311 @@
+body {
+    background-color: rgb(36, 33, 31);
+    font-family: Arial, Verdana, sans-serif;
+}
+
+#titul{
+    
+    width: 950px;
+    height: 50px;
+    color: black;
+    align-items: center;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin:auto;
+    margin-bottom: 20px;
+    border: 10px #333;
+    top: 50%;
+    left: 50%;
+    background-color: #eee;
+    font-size: 18px;
+    border-radius: 15px;
+    
+    
+
+}
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    margin-bottom: 5px;
+    transition: 0.4s;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    border-radius: 15px;
+  }
+
+ 
+  .active, .accordion:hover {
+    background-color: #ccc;
+  }
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+    font-size: 15px;
+    line-height: 30px;
+    border-radius: 15px;
+    
+  }
+
+canvas { 
+    background: #eee; 
+    justify-content: center;
+    margin: 10px;
+    border-radius: 15px;
+}
+#piezas {
+
+    display: flex;
+    flex-wrap: wrap;
+    width: 875px;
+    margin-top:40px;   
+    
+ 
+}
+
+#piezas2{
+    
+  
+    display: flex;
+    flex-wrap: wrap;
+    width: 875px;
+    height: 40px;
+    
+    margin-top:5px;   
+
+    
+}
+
+
+#puzzle {
+
+
+    border: 1px solid black;
+    width: 848px;
+    height: 165px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    
+}
+#puzzle2 {
+
+    
+        border: 1px solid black;
+        width: 848px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        
+    }
+
+.pieza {
+    width: 106px;
+    height: 165px;
+    background-size: cover;
+    margin: 1px;
+    
+    
+}
+
+.pieza2 {
+    width: 106px;
+    height: 40px;
+    background-size: cover;
+    margin: 1px;
+    
+}
+
+.placeholder {
+    background-color: #eee;
+    outline: 1px solid #333;
+    width: 106px;
+    height: 165px;
+    transition: 1s;
+    margin-bottom: 10px;
+    
+}
+.placeholder2 {
+    background-color: #F2F2F2;
+    outline: 1px solid #333;
+    width: 106px;
+    height: 40px;
+    transition: 1s;
+    
+}
+
+.placeholder.hover {
+    background-color: orange;
+}
+
+.placeholder2.hover {
+    background-color: orange;
+}
+
+.placeholder .pieza {
+    margin: 0;
+}
+
+.placeholder2 .pieza2 {
+    margin: 0;
+}
+
+
+#mensaje {
+    color: black;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+   
+}
+
+#mensaje2 {
+    color: black;
+    text-align: center;
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+.ganaste {
+    background-color: #B3D67C;
+}
+
+.ganaste #mensaje {
+    display: block;
+    
+}
+
+.perdiste {
+    background-color: #af2e1d;
+}
+
+.perdiste #mensaje2 {
+    display: block;
+    
+}
+
+
+
+
+
+
+
+.ganaste .placeholder {
+    outline: none;
+    display:none;
+}
+
+.ganaste #piezas {
+    display: none;
+}
+ .ganaste #puzzle{
+     display: none;
+ }
+
+ .ganaste .placeholder2 {
+    outline: none;
+    display:none;
+}
+
+.ganaste #piezas2 {
+    display: none;
+}
+ .ganaste #puzzle2{
+     display: none;
+ }
+
+ .ganaste #lienzo{
+    display: none;
+}
+
+.ganaste #titulo{
+    display: none;
+}
+
+.ganaste #pan1{
+    display: none;
+}
+.ganaste #pan2{
+    display: none;
+}
+
+.ganaste #acord1{
+    display: none;
+}
+
+.ganaste #acord2{
+    display: none;
+}
+
+
+
+ .perdiste .placeholder {
+    outline: none;
+    display:none;
+}
+
+.perdiste #piezas {
+    display: none;
+}
+ .perdiste #puzzle{
+     display: none;
+ }
+
+ .perdiste .placeholder2 {
+    outline: none;
+    display:none;
+}
+
+.perdiste #piezas2 {
+    display: none;
+}
+ .perdiste #puzzle2{
+     display: none;
+ }
+.perdiste #lienzo{
+    display: none;
+}
+.perdiste #titulo{
+    display: none;
+}
+
+.perdiste #pan1{
+    display: none;
+}
+.perdiste #pan2{
+    display: none;
+}
+
+.perdiste #acord1{
+    display: none;
+}
+
+.perdiste #acord2{
+    display: none;
+}
+
+
+
+
+ 
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
